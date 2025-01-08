@@ -2,7 +2,7 @@ package snake_01;
 
 import demo_06.Interface;
 
-public class Test_01_01_job
+public class Test_01_01_home
 { 
   public static void main( String[] args )
   { 
