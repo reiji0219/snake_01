@@ -13,7 +13,7 @@ public class Test_01_21_home
 			Interface save = Calc21.create();
 			save.execute();
 
-			System.out.println( "Hello World_1" );
+			System.out.println( "Test_01_21_home" );
 		});
 	}
 }
