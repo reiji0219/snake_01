@@ -13,9 +13,8 @@ public class Test_01_22_home
       Interface save = Calc22.create();
         save.execute();
 
-    });
-
-    System.out.println( "Hello World_1" );
+        System.out.println( "Hello World_1" );
+    });   
   }
 }
 
