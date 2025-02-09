@@ -62,7 +62,8 @@ public class Item07 implements Interface
     calc.display();
   }
 
-  public void execute(){
+  @Override
+public void execute(){
     indi( "Lambda" );
 
     indi( "ArrayList" );
@@ -94,7 +95,7 @@ public class Item07 implements Interface
     };
 
 
-    Collections.sort( animals );
+    Collections.sort( animals, compa );
 
 
     Iterator<String> itera = animals.iterator();
