@@ -12,7 +12,7 @@ public class Calc18 extends Item18
   }
 
   @Override
-public void display(){
+  public void display(){
     indi( name );
   }
 
@@ -30,6 +30,8 @@ public void display(){
         System.out.println( "計算式 :" + item.getId() );
 
         item.display();
+        
+        item.execute();
       });
     };
   }

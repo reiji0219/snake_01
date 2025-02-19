@@ -5,11 +5,6 @@ import java.util.function.Consumer;
 
 public class Item18 implements Interface
 {
-  @Override
-public void execute(){
-    indi( "Lambda" );
-
-  }
 
   private String id;
   private String name;
@@ -64,6 +59,16 @@ public void execute(){
 
   public static double calcTax( double price, double tax ){
     return( price * tax );
+  }
+  
+  @Override
+  public void execute(){
+	  indi( "Lambda" );
+	  
+	  indi( "ArrayList" );
+	  
+	  
+	  
   }
 
   @Override
