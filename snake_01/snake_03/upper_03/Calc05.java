@@ -1,21 +1,26 @@
-package upper_02;
+package upper_03;
 
 import demo_06.Interface;
 
-public class Calc06 extends Item06
+public class Calc05 extends Item05
 {
   private String name;
 
-  public Calc06( String name ){
+  public Calc05( String name ){
     super();
     this.name = name;
   }
 
+  @Override
+public void display(){
+    indi( name );
+  }
+
   public static Interface create(){
     return() -> {
-      Calc06 calc = new Calc06( "Poly-morphism" );
+      Calc05 calc = new Calc05( "Poly-morphism" );
 
-      Item06.save( item -> {
+      Item05.save( item -> {
         item.id( "掛け算" )
             .name( "税込み価格" )
             .price( 980 )
@@ -25,15 +30,10 @@ public class Calc06 extends Item06
         System.out.println( "計算式 :" + item.getId() );
 
         item.display();
-
+        
         item.execute();
       });
     };
-  }
-
-  @Override
-public void display(){
-    indi( name );
   }
 
   public void process( Interface inter ){
@@ -42,5 +42,6 @@ public void display(){
     inter.execute();
 
     indi( "end" );
-  }
+   }
 }
+
