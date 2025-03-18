@@ -3,7 +3,8 @@ package main.java.snake.snake_03.middle_03;
 import java.util.function.Consumer;
 import demo_06.Interface;
 
-public class Item12 implements Interface {
+public class Item12 implements Interface 
+{
 	@Override
 	public void execute() {
 		indi("Lambda");
