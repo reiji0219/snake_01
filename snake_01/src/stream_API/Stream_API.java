@@ -1,5 +1,8 @@
 package stream_API;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Stream_API
 {
 	//こんな「 Member」レコードがあって、
