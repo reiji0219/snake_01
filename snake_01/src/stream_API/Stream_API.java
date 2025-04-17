@@ -12,11 +12,12 @@ public class Stream_API
 
 	//こんなList<Member>があるとします
 
-	List<Member> memberList = List.of();
+	List<Member> memberList = List.of();{
 		new Member( "佐々木", 27 ).
 		new Member( "中野", 20 ).
 		new Member( "田中", 19 ).
 		new Member( "小田", 16 );
+		}
 
 	
 
@@ -51,6 +52,6 @@ public class Stream_API
 		// List に変換する
 		.toList( );
 						
-	}
+		}
 	}
 }
