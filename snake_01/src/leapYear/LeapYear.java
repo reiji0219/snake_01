@@ -5,7 +5,7 @@ package leapYear;
  * @author reiji
  * 
  */
-public class LeapYear 
+public class LeapYear
 {
 
 	/**

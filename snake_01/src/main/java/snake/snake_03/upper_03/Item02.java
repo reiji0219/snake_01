@@ -1,12 +1,13 @@
 package main.java.snake.snake_03.upper_03;
 
 import java.util.function.Consumer;
+
 import demo_06.Interface;
 
 public class Item02 implements Interface
 {
   @Override
-public void execute(){ 
+public void execute(){
     indi( "Lambda" );
 
   }
@@ -18,42 +19,42 @@ public void execute(){
   private Calc02 calc;
 
 
-  public Item02 id( String id ){ 
+  public Item02 id( String id ){
     this.id = id;
     return this;
   }
 
-  public Item02 name( String name ){ 
+  public Item02 name( String name ){
     this.name = name;
     return this;
   }
 
-  public Item02 price( double price ){ 
+  public Item02 price( double price ){
     this.price = price;
     return this;
   }
 
-  public Item02 tax( double tax ){ 
+  public Item02 tax( double tax ){
     this.tax = tax;
     return this;
   }
 
-  public Item02 calc( Calc02 calc ){ 
+  public Item02 calc( Calc02 calc ){
     this.calc = calc;
     return this;
   }
 
-  public static void save( Consumer<Item02> con ){ 
+  public static void save( Consumer<Item02> con ){
     Item02 item = new Item02();
     con.accept( item );
     indi( "save :" + item );
   }
 
-  public String getId(){ 
+  public String getId(){
     return id;
   }
 
-  public void display(){ 
+  public void display(){
     indi( "表示内容 :"  + name );
 
     double calcInTax = calcTax( price, tax );
@@ -62,7 +63,7 @@ public void execute(){
     calc.display();
   }
 
-  public static double calcTax( double price, double tax ){ 
+  public static double calcTax( double price, double tax ){
     return( price * tax );
   }
 
@@ -72,7 +73,7 @@ public String toString(){
     return( "Item02 :" + "id=" + id + " " + "name=" + name + " " + "price=" + price + " " + "tax=" + tax );
   }
 
-  public static void indi( String s0 ){ 
+  public static void indi( String s0 ){
     System.out.println( s0 );
   }
 }

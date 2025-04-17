@@ -1,7 +1,8 @@
 package main.java.snake.snake_04.upper_04;
 
-import demo_06.Interface;
 import java.util.function.Consumer;
+
+import demo_06.Interface;
 
 public class Item04 implements Interface
 {

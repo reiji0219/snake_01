@@ -1,12 +1,13 @@
 package main.java.snake.snake_03.under_03;
 
 import java.util.function.Consumer;
+
 import demo_06.Interface;
 
 public class Item21 implements Interface
 {
   @Override
-public void execute(){ 
+public void execute(){
     indi( "Lambda" );
 
   }

@@ -7,7 +7,7 @@ import demo_06.Interface;
 public class Item17 implements Interface
 {
   @Override
-public void execute(){ 
+public void execute(){
     indi( "Lambda" );
 
   }
@@ -19,42 +19,42 @@ public void execute(){
   private Calc17 calc;
 
 
-  public Item17 id( String id ){ 
+  public Item17 id( String id ){
     this.id = id;
     return this;
   }
 
-  public Item17 name( String name ){ 
+  public Item17 name( String name ){
     this.name = name;
     return this;
   }
 
-  public Item17 price( double price ){ 
+  public Item17 price( double price ){
     this.price = price;
     return this;
   }
 
-  public Item17 tax( double tax ){ 
+  public Item17 tax( double tax ){
     this.tax = tax;
     return this;
   }
 
-  public Item17 calc( Calc17 calc ){ 
+  public Item17 calc( Calc17 calc ){
     this.calc = calc;
     return this;
   }
 
-  public static void save( Consumer<Item17> con ){ 
+  public static void save( Consumer<Item17> con ){
     Item17 item = new Item17();
     con.accept( item );
     indi( "save :" + item );
   }
 
-  public String getId(){ 
+  public String getId(){
     return id;
   }
 
-  public void display(){ 
+  public void display(){
     indi( "表示内容 :" + name );
 
     double calcInTax = calcTax( price, tax );
@@ -68,11 +68,11 @@ public void execute(){
   }
 
   @Override
-public String toString(){ 
+public String toString(){
     return( "Item17 :" + "id=" + id + " " + "name=" + name + " " + "price=" + price + " " + "tax=" + tax );
   }
 
-  public static void indi( String s0 ){ 
+  public static void indi( String s0 ){
     System.out.println( s0 );
   }
 }

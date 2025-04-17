@@ -2,7 +2,7 @@ package main.java.snake.snake_04.upper_04;
 
 import java.util.function.Consumer;
 
-public class Item17 
+public class Item17
 {
 	private String id;
 	private String name;

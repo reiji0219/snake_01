@@ -7,7 +7,6 @@ public class Calc03_1 extends Item03_1
   private String name;
 
   public Calc03_1( String name ){
-    super();
     this.name = name;
   }
 

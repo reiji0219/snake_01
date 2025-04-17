@@ -7,7 +7,7 @@ public class Test_03_17_job
   public static void main( String[] args )
   {
     Calc17 calc = new Calc17( "Poly-morphism" );
-    calc.process( () -> { 
+    calc.process( () -> {
       System.out.println( "関心事を記述" );
 
       Interface save = Calc17.create();

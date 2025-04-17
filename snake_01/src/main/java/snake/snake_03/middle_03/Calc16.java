@@ -6,16 +6,15 @@ public class Calc16 extends Item16
 {
   private String name;
 
-  public Calc16( String name ){ 
-    super();
+  public Calc16( String name ){
     this.name = name;
   }
 
-  public static Interface create(){ 
-    return() -> { 
+  public static Interface create(){
+    return() -> {
       Calc16 calc = new Calc16( "Poly-morphism" );
 
-      Item16.save( item -> { 
+      Item16.save( item -> {
         item.id( "掛け算" )
             .name( "税込み価格" )
             .price( 980 )
@@ -31,11 +30,11 @@ public class Calc16 extends Item16
   }
 
   @Override
-public void display(){ 
+public void display(){
     indi( name );
   }
 
-  public void process( Interface inter ){ 
+  public void process( Interface inter ){
     indi( "start" );
 
     inter.execute();

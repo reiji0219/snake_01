@@ -1,12 +1,12 @@
 package main.java.snake.snake_03.upper_03;
 
-import demo_06.Interface;
-import java.util.function.Consumer;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.function.Consumer;
+
+import demo_06.Interface;
 
 public class Item04_1 implements Interface
 {
@@ -66,9 +66,9 @@ public class Item04_1 implements Interface
 public void execute(){
     indi( "Lambda" );
 
-    ArrayList<String> animals = new ArrayList<String>( Arrays.asList( "Dog" ) );
+    ArrayList<String> animals = new ArrayList<>( Arrays.asList( "Dog" ) );
 
-    ArrayList<String> animal = new ArrayList<String>();
+    ArrayList<String> animal = new ArrayList<>();
       animal.add( "Cat" );
       animal.add( "Elephant" );
       animal.add( "Phoenix" );
@@ -83,24 +83,17 @@ public void execute(){
       animals.remove( 2 );
       animals.add( 2, "Lion" );
 
-    Comparator<String> compa = new Comparator<String>(){
-      @Override
-	public int compare( String o1, String o2 ){
-        return( o2.compareTo( o1 ));
-      }
-    };
+    Comparator<String> compa = (o1, o2) -> ( o2.compareTo( o1 ));
 
     Collections.sort( animals, compa );
 
-    Iterator<String> itera = animals.iterator();
-    while( itera.hasNext() ){
-      String hoge = itera.next();
-        System.out.print( hoge + " " );
+    for (String hoge : animals) {
+      System.out.print( hoge + " " );
     }
 
       indi( " " );
 
-    ArrayList<Integer> seq = new ArrayList<Integer>();
+    ArrayList<Integer> seq = new ArrayList<>();
 
     for( int i = 0; i < 5; i++ ){
       int number = new java.util.Random().nextInt( 4 ) + 1;

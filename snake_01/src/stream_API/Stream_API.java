@@ -3,7 +3,7 @@ package stream_API;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stream_API 
+public class Stream_API
 {
 	//こんな「 Member」レコードがあって、
 
@@ -47,9 +47,9 @@ public class Stream_API
 		// 18歳以上のメンバーのみ抽出する
 		.filter( member -> member.age() >= 18 )
 		// Member から String（メンバーの名前）に変換する
-		.map( member -> member.name() )
+		.map( Member::name )
 		// List に変換する
-		.toList( ); 
+		.toList( );
 						
 	}
 	}

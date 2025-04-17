@@ -7,7 +7,6 @@ public class Calc22 extends Item22
   private String name;
 
   public Calc22( String name ){
-    super();
     this.name = name;
   }
 
@@ -16,8 +15,8 @@ public void display(){
     indi( name );
   }
 
-  public static Interface create(){ 
-    return() -> { 
+  public static Interface create(){
+    return() -> {
       Calc22 calc = new Calc22( "Poly-morphism" );
 
       Item22.save( item -> {
@@ -35,7 +34,7 @@ public void display(){
     };
   }
 
-  public void process( Interface inter ){ 
+  public void process( Interface inter ){
     indi( "start" );
 
     inter.execute();

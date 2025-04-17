@@ -6,13 +6,12 @@ public class Calc17 extends Item17
 {
   private String name;
 
-  public Calc17( String name ){ 
-    super();
+  public Calc17( String name ){
     this.name = name;
   }
 
-  public static Interface create(){ 
-    return() -> { 
+  public static Interface create(){
+    return() -> {
       Calc17 calc = new Calc17( "Poly-morphism" );
 
       Item17.save( item -> {
@@ -29,11 +28,12 @@ public class Calc17 extends Item17
     };
   }
 
-  public void display(){ 
+  @Override
+public void display(){
     indi( name );
   }
 
-  public void process( Interface inter ){ 
+  public void process( Interface inter ){
     indi( "start" );
 
     inter.execute();

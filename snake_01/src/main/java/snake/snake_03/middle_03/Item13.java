@@ -1,6 +1,7 @@
 package main.java.snake.snake_03.middle_03;
 
 import java.util.function.Consumer;
+
 import demo_06.Interface;
 
 public class Item13 implements Interface

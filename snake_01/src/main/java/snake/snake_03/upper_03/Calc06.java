@@ -3,19 +3,18 @@ package main.java.snake.snake_03.upper_03;
 import demo_06.Interface;
 
 public class Calc06 extends Item06
-{ 
+{
   private String name;
 
-  public Calc06( String name ){ 
-    super();
+  public Calc06( String name ){
     this.name = name;
   }
 
-  public static Interface create(){ 
-    return() -> { 
+  public static Interface create(){
+    return() -> {
       Calc06 calc = new Calc06( "Poly-morphism" );
 
-      Item06.save( item -> { 
+      Item06.save( item -> {
         item.id( "掛け算" )
             .name( "税込み価格" )
             .price( 980 )
@@ -32,11 +31,11 @@ public class Calc06 extends Item06
   }
 
   @Override
-public void display(){ 
+public void display(){
     indi( name );
   }
 
-  public void process( Interface inter ){ 
+  public void process( Interface inter ){
     indi( "start" );
 
     inter.execute();

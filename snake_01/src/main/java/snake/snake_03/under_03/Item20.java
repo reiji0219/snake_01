@@ -1,6 +1,7 @@
 package main.java.snake.snake_03.under_03;
 
 import java.util.function.Consumer;
+
 import demo_06.Interface;
 
 public class Item20 implements Interface
@@ -18,27 +19,27 @@ public void execute(){
   private Calc20 calc;
 
 
-  public Item20 id( String id ){ 
+  public Item20 id( String id ){
     this.id = id;
     return this;
   }
 
-  public Item20 name( String name ){ 
+  public Item20 name( String name ){
     this.name = name;
     return this;
   }
 
-  public Item20 price( double price ){ 
+  public Item20 price( double price ){
     this.price = price;
     return this;
   }
 
-  public Item20 tax( double tax ){ 
+  public Item20 tax( double tax ){
     this.tax = tax;
     return this;
   }
 
-  public Item20 calc( Calc20 calc ){ 
+  public Item20 calc( Calc20 calc ){
     this.calc = calc;
     return this;
   }
@@ -49,11 +50,11 @@ public void execute(){
     indi( "save :" + item );
   }
 
-  public String getId(){ 
+  public String getId(){
     return id;
   }
 
-  public void display(){ 
+  public void display(){
     indi( "表示内容 :" + name );
 
     double clacIntax = clactax( price, tax );
