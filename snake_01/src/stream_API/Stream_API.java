@@ -1,15 +1,12 @@
 package stream_API;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Stream_API
 {
 	//こんな「 Member」レコードがあって、
 
 	public record Member ( String name, int age )
 	{
-
+/*
 	//こんなList<Member>があるとします
 
 	List<Member> memberList = List.of();{
@@ -17,7 +14,7 @@ public class Stream_API
 		new Member( "中野", 20 ).
 		new Member( "田中", 19 ).
 		new Member( "小田", 16 );
-		}
+	}
 
 	
 
@@ -26,12 +23,13 @@ public class Stream_API
 	//18歳以上のメンバーの名前だけのリストを作成するコード
 	// for,if が有る（ベタな記述）
 
-	List<String> resultList = new ArrayList<>();
+	List<String> resultList = new ArrayList<>()
 
 	for( Member member : memberList ){
 		if( member.age() >= 18 ){
 			String name = member.name();
 			resultList.add( name );
+			
 		}
 	}
 
@@ -51,7 +49,6 @@ public class Stream_API
 		.map( Member::name )
 		// List に変換する
 		.toList( );
-						
-		}
+*/						
 	}
 }
