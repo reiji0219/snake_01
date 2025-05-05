@@ -1,4 +1,4 @@
-package main.java.snake.snake_04.upper_04;
+package main.java.snake.snake_04.middle_04;
 
 public class Test_04_17_home
 {

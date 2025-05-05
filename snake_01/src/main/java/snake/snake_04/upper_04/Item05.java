@@ -45,7 +45,8 @@ public class Item05
 
 
 
-  public String toString(){
+  @Override
+public String toString(){
     return( "Item05 :" + "id=" + id + " " + "name=" + name + " " + "price=" + price + " " + "tax=" + tax );
   }
 
