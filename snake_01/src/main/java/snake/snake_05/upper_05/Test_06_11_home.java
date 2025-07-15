@@ -2,7 +2,7 @@ package main.java.snake.snake_05.upper_05;
 
 import demo_06.Interface;
 
-public class Test_06_11_home 
+public class Test_06_11_home
 {
 	public static void main( String[] args )
 	{
