@@ -65,12 +65,12 @@ public class Stream_API
 	List<String> numTextList = Arrays.asList("0", "1", null);
 
 	List<Integer> numList = numTextList.stream()
-			.filter((String numText) -> {
-				return Objects.nonNull(numText);
-			})
-			.map((String numText) -> {
-				return Integer.parseInt(numText);
-			})
-			.collect(Collectors.toList());
+		.filter((String numText) -> {
+			return Objects.nonNull(numText);
+		})
+		.map((String numText) -> {
+			return Integer.parseInt(numText);
+		})
+		.collect(Collectors.toList());
 
 }

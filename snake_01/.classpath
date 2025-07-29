@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="main/java/snake/snake_05/upper_05/test07_27/" kind="src" path="src"/>
 	<classpathentry kind="src" path="batch"/>
 	<classpathentry kind="src" path="classes"/>
 	<classpathentry kind="src" path="web"/>
